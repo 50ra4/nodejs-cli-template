@@ -8,7 +8,7 @@
   "description": "node.jsのCLIアプリ開発用",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --loader ts-node/esm src/scripts/sample.ts"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/50ra4/nodejs-cli-template/issues"
   },
-  "homepage": "https://github.com/50ra4/nodejs-cli-template#readme"
+  "homepage": "https://github.com/50ra4/nodejs-cli-template#readme",
+  "devDependencies": {
+    "@types/node": "20.14.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
+  }
 }
