@@ -11,7 +11,8 @@
     "test": "node --loader ts-node/esm src/scripts/sample.ts",
     "lint:prettier": "prettier --write 'src/**/*.{js,ts,tsx}'",
     "lint:eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'",
-    "lint": "npm run lint:prettier && npm run lint:eslint"
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-promise": "6.2.0",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.7",
     "prettier": "3.3.2",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
