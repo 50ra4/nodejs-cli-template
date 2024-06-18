@@ -8,7 +8,9 @@
   "description": "node.jsのCLIアプリ開発用",
   "main": "index.js",
   "scripts": {
-    "test": "node --loader ts-node/esm src/scripts/sample.ts"
+    "test": "node --loader ts-node/esm src/scripts/sample.ts",
+    "lint:eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'",
+    "lint": "npm run lint:eslint"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,12 @@
   "homepage": "https://github.com/50ra4/nodejs-cli-template#readme",
   "devDependencies": {
     "@types/node": "20.14.5",
+    "@typescript-eslint/eslint-plugin": "7.13.1",
+    "@typescript-eslint/parser": "7.13.1",
+    "eslint": "8.57.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-promise": "6.2.0",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
   }
